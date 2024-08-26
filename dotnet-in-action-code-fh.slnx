@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="ch02\HelloDotNet\HelloDotNet.csproj" />
   <Properties Name="Visual Studio">
     <Property Name="OpenWith" Value="17" />
   </Properties>
