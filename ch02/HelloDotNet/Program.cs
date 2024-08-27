@@ -1,4 +1,4 @@
-﻿using Figgle;
+﻿using HelloDotNet;
 
 if (args.Length == 0)
 {
@@ -6,4 +6,4 @@ if (args.Length == 0)
     Environment.Exit(1);
 }
 
-Console.WriteLine(FiggleFonts.Standard.Render(args[0]));
+AsciiArt.Write(args[0]);
