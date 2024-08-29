@@ -1,9 +1,6 @@
 ﻿using HelloDotNet;
+using CommandLine;
 
-if (args.Length == 0)
-{
-    Console.WriteLine("Usage: HelloDotNet <text>");
-    Environment.Exit(1);
-}
-
-AsciiArt.Write(args[0]);
+Parser.Default.ParseArguments<Options>(args)
+    .WithParsed<Options>(AsciiArt.Write)
+    .WithNotParsed(_ => Console.WriteLine("Usage: HelloDotNet <text> --font Big"));
